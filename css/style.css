@@ -3,6 +3,8 @@
     --blue:#2A7AE4;
     --gray:#F5F5F5;
     --black:#010101;
+    --ligth_blue:#EAF2FD;
+    --gray_dark: #A2A2A2;
 }
 *{
     margin: 0;
@@ -12,6 +14,13 @@
 }
 img{
     max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #2A7AE4;
 }
 .container{
     margin:  0  auto;
@@ -33,7 +42,6 @@ img{
 .logo__link{
     display: flex;
     align-items: center;
-    text-decoration: none;
     font-size:24px;
     color: var(--blue);
 }
@@ -103,4 +111,120 @@ img{
     padding: 1rem;
     background-color: var(--blue);
     color: #fff;
+}
+/* secciones stars wars */
+.section{
+    padding: 2rem 0;
+}
+.section-titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.section-ver-todo{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+.lista{
+    display: flex;
+    justify-content: space-between;
+}
+.lista p:nth-child(2){
+    font-size: 14px;
+    font-weight: 300;
+}
+.lista li{
+    line-height: 1.6;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+/* contacto */
+.contacto-fondo{
+    background-color: var(--ligth_blue);
+}
+
+.contacto{
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: flex-start;
+}
+
+.contacto__links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.contacto__links a{
+    color: #010101;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.formulario p{
+    font-size: 16px;
+}
+.formulario__nombre{
+    display: flex;
+    color: var(--gray_dark);
+    font-size: 12px;
+    flex-direction: column;
+    border-bottom: 2px solid var(--gray);
+    background-color: #fff;
+    padding: .3rem;
+
+}
+.formulario__nombre input{
+    margin-top: .5rem;
+    border: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--black);
+}
+.formulario__nombre input:focus{
+    outline: none;
+}
+
+.formulario__mensaje{
+    height: 5rem;
+    padding: .5rem;
+    font-size: 15px;
+    resize: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--black);
+}
+.formulario__mensaje:focus{
+    outline: none;
+}
+.formulario__mensaje::placeholder{
+    color: var(--gray_dark);
+    font-weight: 200;
+}
+.formulario__button{
+    width: 30%;
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--blue);
+    font-size: 16px;
+    font-weight: 200;
+}
+/* footer */
+.footer{
+    text-align: center;
+    padding: 2rem 0;
 }
