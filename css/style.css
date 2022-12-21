@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+:root{
+    --blue:#2A7AE4;
+    --gray:#F5F5F5;
+    --black:#010101;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    margin:  0  auto;
+    width: 80%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+}
+.logo__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size:24px;
+    color: var(--blue);
+}
+.logo__link span{
+    color: var(--black);
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--gray);
+    padding: .5rem;
+    width: 70%;
+}
+.buscador__input{
+  border: none;
+  width: 100%;
+  background-color: rgba(255,255,255,0);
+  font-size: 16px;
+}
+.buscador__input:focus{
+    outline: none;
+}
+.buscador__button{
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+.buscador__button:hover{
+    cursor: pointer;
+}
+.button{
+    padding: .7rem 4rem;
+    background-color: #fff;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+.button:hover{
+    cursor: pointer;
+}
+
+/* Banner */
+.banner{
+    height: 352px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+}
+.banner__contenido{
+    position: relative;
+    top: 50%;
+    color: #fff;
+    margin-bottom: 1rem;
+    
+}
+.banner__titulo{
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner_subtitulo{
+    margin-top: .5rem;
+    font-size:25px;
+    font-weight: 400;
+}
+.banner__button{
+    margin-top: .5rem;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: #fff;
+}
