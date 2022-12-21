@@ -1,183 +1,320 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
-:root{
-    --blue:#2A7AE4;
-    --gray:#F5F5F5;
-    --black:#010101;
-    --ligth_blue:#EAF2FD;
+
+:root {
+    --blue: #2A7AE4;
+    --gray: #F5F5F5;
+    --black: #010101;
+    --ligth_blue: #EAF2FD;
     --gray_dark: #A2A2A2;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-img{
+
+img {
     max-width: 100%;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: #2A7AE4;
 }
-.container{
-    margin:  0  auto;
-    width: 80%;
+
+.container {
+    width: 95%;
+    margin: 0 auto;
 }
 
-.header{
+@media (min-width: 360px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    width: 50%;
+    gap: .5rem;
+    
 }
-.logo__link{
+
+@media (min-width: 566px) {
+    .logo {
+        width: 70%;
+    }
+}
+
+.logo__link {
     display: flex;
     align-items: center;
-    font-size:24px;
+    font-size: 14px;
     color: var(--blue);
 }
-.logo__link span{
+
+@media (min-width: 768px) {
+    .logo__link {
+        font-size: 20px;
+    }
+}
+
+.logo__link span {
     color: var(--black);
 }
-.buscador{
+
+.buscador {
     display: flex;
     align-items: center;
     border-radius: 1rem;
     background-color: var(--gray);
     padding: .5rem;
-    width: 70%;
+    display: none;
 }
-.buscador__input{
-  border: none;
-  width: 100%;
-  background-color: rgba(255,255,255,0);
-  font-size: 16px;
+
+@media (min-width: 768px) {
+    .buscador {
+        width: 70%;
+    }
 }
-.buscador__input:focus{
+
+.buscador__input {
+    border: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+.buscador__button--active{
+    display: inline-flex;
+}
+@media (min-width: 566px) {
+    .buscador {
+        display: inline-flex;
+    }
+    .buscador__button--active{
+        display: none;
+    }
+ 
+}
+
+.buscador__input:focus {
     outline: none;
 }
-.buscador__button{
-    background-color: rgba(255,255,255,0);
+
+.buscador__button {
+    background-color: rgba(255, 255, 255, 0);
     border: none;
 }
-.buscador__button:hover{
+
+.buscador__button:hover {
     cursor: pointer;
 }
-.button{
+
+.button {
     padding: .7rem 4rem;
     background-color: #fff;
     border: 1px solid var(--blue);
     color: var(--blue);
 }
-.button:hover{
+
+.button:hover {
     cursor: pointer;
 }
 
 /* Banner */
-.banner{
+.banner {
     height: 352px;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding-bottom: 2rem;
 }
-.banner__contenido{
+
+.banner__contenido {
     position: relative;
-    top: 50%;
+    top: 40%;
     color: #fff;
     margin-bottom: 1rem;
-    
+
 }
-.banner__titulo{
-    font-size: 60px;
+
+.banner__titulo {
+    font-size: 30px;
     font-weight: 700;
 }
-.banner_subtitulo{
+
+.banner_subtitulo {
     margin-top: .5rem;
-    font-size:25px;
+    font-size: 12.5px;
     font-weight: 400;
 }
-.banner__button{
+@media (min-width: 360px) {
+    .banner__titulo {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    .banner_subtitulo {
+        margin-top: .5rem;
+        font-size: 19px;
+        font-weight: 400;
+    } 
+}
+@media (min-width:768px) {
+    .banner__titulo {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    
+    .banner_subtitulo {
+        margin-top: .5rem;
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
+
+
+.banner__button {
     margin-top: .5rem;
     padding: 1rem;
     background-color: var(--blue);
     color: #fff;
 }
+
 /* secciones stars wars */
-.section{
+.section {
     padding: 2rem 0;
 }
-.section-titulo{
+
+.section-titulo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
 }
 
-.section-ver-todo{
+.section-ver-todo {
     display: flex;
     align-items: center;
     gap: .2rem;
 }
-.lista{
-    display: flex;
-    justify-content: space-between;
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
 }
-.lista p:nth-child(2){
+
+
+.lista p:nth-child(2) {
     font-size: 14px;
     font-weight: 300;
 }
-.lista li{
+
+.lista li {
     line-height: 1.6;
 }
-.producto{
+
+.producto {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+}
+
+.lista li:nth-child(5){
+    display: none;
+
+}
+.lista li:nth-child(6){
+    display: none;
+}
+@media (min-width: 360px) {
+    .lista{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (min-width: 768px) {
+    .lista{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .lista li:nth-child(5){
+        display: initial;
+        
+     
+    }
+    .lista li:nth-child(6){
+       display: initial;
+        
+    }
 }
 
 
 /* contacto */
-.contacto-fondo{
+.contacto-fondo {
     background-color: var(--ligth_blue);
 }
 
-.contacto{
+.contacto {
     padding: 3rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    
 }
 
-.contacto__links{
+.contacto__links {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
+   
 }
-.contacto__links a{
+.contacto__links a {
     color: #010101;
     font-weight: 400;
     font-size: 16px;
+    
 }
-
-.formulario{
+.contacto__links li{
+    text-align: center;
+    
+}
+.logo__link--formulario{
+    margin: auto;
+    padding: 1rem;
+}
+.formulario {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    margin-top: 2rem;
 }
-.formulario p{
+
+.formulario p {
     font-size: 16px;
 }
-.formulario__nombre{
+
+.formulario__nombre {
     display: flex;
     color: var(--gray_dark);
     font-size: 12px;
@@ -185,20 +322,21 @@ a{
     border-bottom: 2px solid var(--gray);
     background-color: #fff;
     padding: .3rem;
-
 }
-.formulario__nombre input{
+
+.formulario__nombre input {
     margin-top: .5rem;
     border: none;
     font-size: 15px;
     font-weight: 300;
     color: var(--black);
 }
-.formulario__nombre input:focus{
+
+.formulario__nombre input:focus {
     outline: none;
 }
 
-.formulario__mensaje{
+.formulario__mensaje {
     height: 5rem;
     padding: .5rem;
     font-size: 15px;
@@ -208,23 +346,80 @@ a{
     font-weight: 300;
     color: var(--black);
 }
-.formulario__mensaje:focus{
+
+.formulario__mensaje:focus {
     outline: none;
 }
-.formulario__mensaje::placeholder{
+
+.formulario__mensaje::placeholder {
     color: var(--gray_dark);
     font-weight: 200;
 }
-.formulario__button{
-    width: 30%;
-    padding: 1rem;
+
+.formulario__button {
+    width: 50%;
+    padding: .5rem 1rem;
     color: #fff;
     background-color: var(--blue);
     font-size: 16px;
     font-weight: 200;
 }
+@media (min-width: 360px) {
+    .formulario{
+        margin-top: 0;
+    }
+    .contacto__links li{
+        text-align: left;
+    }
+    .contacto{
+        grid-template-columns: repeat(2,1fr);
+        gap: .5rem;
+
+    }
+    .logo__link--formulario{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 0;
+        padding: 1rem 0;
+    }
+    .contacto__links{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .formulario{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+}
+@media (min-width: 768px) {
+    .formulario__button{
+        width: 30%;
+    }
+    .contacto{
+        grid-template-columns: 1fr 1fr 2fr;
+        gap: 1rem;
+    }
+    .logo__link--formulario{
+        margin-top: 0;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .contacto__links{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .formulario{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+
+
+
+
+
 /* footer */
-.footer{
+.footer {
     text-align: center;
     padding: 2rem 0;
 }
