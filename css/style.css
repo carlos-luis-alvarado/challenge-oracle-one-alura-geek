@@ -147,7 +147,7 @@ a {
     height: 352px;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     padding-bottom: 2rem;
 }
@@ -423,3 +423,34 @@ a {
     text-align: center;
     padding: 2rem 0;
 }
+
+
+/* HOME LOGIN */
+
+.section-formulario-login{
+    background-color: var(--gray);
+    padding: 4rem 0;
+}
+.button__login--active{
+    display: none;
+}
+
+.formulario__login{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+@media (min-width: 360px) {
+    .formulario__login{
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .formulario__login{
+       
+        width: 35%;
+    }
+}
+
