@@ -345,6 +345,7 @@ a {
     font-size: 15px;
     font-weight: 300;
     color: var(--black);
+    width: 100%;
 }
 
 .formulario__mensaje:focus {
@@ -495,4 +496,16 @@ a {
     .formulario__agregar{
         width: 40%;
     }
+}
+
+label{
+    background-color: rgba(0, 0, 0,0.1);
+}
+.valido{
+    background-color: rgba(144, 212, 144, 0.444);
+
+}
+.no-valido{
+    background-color: rgba(240, 1, 1, 0.66);
+    color: #010101;
 }

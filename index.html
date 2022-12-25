@@ -196,13 +196,16 @@
                     <li><a href="#">Quiero ser franquiciado</a></li>
                     <li><a href="#">Anuncie aqui</a></li>
                 </ul>
-                <form action="" class="formulario">
+                <form class="formulario" data-form-message>
                     <p>Hable con nosostros</p>
                     <label class="formulario__nombre" for="nombre">
                         Nombre
-                        <input id="nombre" type="text">
+                        <input id="nombre" type="text" data-form-message-nombre>
                     </label>
-                    <textarea class="formulario__mensaje"  name="mensaje" id="" placeholder="Escribe tu mensaje"></textarea>
+                    <label class="" for="mensaje">
+                        <textarea class="formulario__mensaje"  name="mensaje" id="" placeholder="Escribe tu mensaje" data-form-message-mg></textarea>
+                    </label>
+                    
                     <button class="button formulario__button" type="submit">Enviar mensaje</button>
                 </form>
             </div>
@@ -212,6 +215,7 @@
         <p>Desarrollado por Carlos Alvarado</p>
         <p>2022</p>
     </footer>
+    <script src="./validations/messageValidations.js"></script>
 </body>
     
 </html>
