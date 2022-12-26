@@ -204,6 +204,9 @@ a {
 }
 
 /* secciones stars wars */
+#main-categorias{
+    margin:0 auto
+}
 .section {
     padding: 2rem 0;
 }
@@ -508,4 +511,10 @@ label{
 .no-valido{
     background-color: rgba(240, 1, 1, 0.66);
     color: #010101;
+}
+
+#mensaje-error{
+    color: red;
+    text-align: center;
+    font-size: 11px;
 }

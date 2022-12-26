@@ -1,13 +1,20 @@
 const inputName =  document.querySelector("[data-form-message-nombre]")
-
 const inputMessage = document.querySelector("[data-form-message-mg]")
 const maxMg = 120
 const maxNm = 40;
 const min = 5;
+
 inputName.addEventListener('blur',()=>validar(inputName,maxNm,'nombre'))
+inputName.addEventListener('keyup',()=>validar(inputName,maxNm,'nombre'))
 inputMessage.addEventListener('blur',()=>validar(inputMessage,maxMg,'mensaje'))
+inputMessage.addEventListener('keyup',()=>validar(inputMessage,maxMg,'mensaje'))
 
-
+const formulario = document.querySelector('#formulario__message')
+formulario.addEventListener('submit',e=>{
+    e.preventDefault();
+    validar(inputName,maxNm,'nombre')
+    validar(inputMessage,maxMg,'nombre');
+})
 
 const validar = (elemento,max,texto)=>{
     // elemento.addEventListener('keydown',(e)=>{

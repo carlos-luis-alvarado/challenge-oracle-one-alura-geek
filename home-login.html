@@ -35,17 +35,18 @@
     <main>
         <div class="section-formulario-login">
             <section class="container">
-                <form class="formulario__login" action="">
+                <form class="formulario__login" id="formulario__login" action="">
                     <p>Iniciar Sesion</p>
                     <label class="formulario__nombre" for="correo">
-                        <input id="correo" type="email" placeholder="Escriba su correo electronico">
+                        <input id="correo" name="email" type="email" placeholder="Escriba su correo electronico">
                     </label>
                     <label class="formulario__nombre" for="password">
-                        <input id="password" type="password" placeholder="Escriba su contraseña">
+                        <input id="password" name="password" type="password" placeholder="Escriba su contraseña">
                     </label>
                     <button class="button">
                         Enviar
                     </button>
+                    <p id="mensaje-error"></p>
                 </form>
             </section>
         </div>
@@ -67,11 +68,12 @@
                     <p>Hable con nosostros</p>
                     <label class="formulario__nombre" for="nombre">
                         Nombre
-                        <input id="nombre" type="text">
+                        <input id="nombre" name="nombre" type="text">
                     </label>
                     <textarea class="formulario__mensaje" name="mensaje" id=""
                         placeholder="Escribe tu mensaje"></textarea>
                     <button class="button formulario__button" type="submit">Enviar mensaje</button>
+                    
                 </form>
             </div>
         </section>
@@ -80,6 +82,7 @@
         <p>Desarrollado por Carlos Alvarado</p>
         <p>2022</p>
     </footer>
+    <script src="./validations/loginValidations.js"></script>
 </body>
 
 </html>
