@@ -239,7 +239,12 @@ a {
 .lista li {
     line-height: 1.6;
 }
-
+.lista li img{
+    display: block;
+    width: 100%;
+    height: 12rem;
+    
+}
 .producto {
     display: flex;
     flex-direction: column;
@@ -462,6 +467,12 @@ a {
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
+.lista-todos-productos img{
+    display: block;
+    width: 100%;
+    height: 12rem;
+}
+
 @media (min-width: 360px) {
     .lista-todos-productos{
         grid-template-columns: repeat(4,1fr);
@@ -478,8 +489,8 @@ a {
 }
 .borrar-editar{
     position: absolute;
-    right: 5px;
-    top: 5px; 
+    right: 10px;
+    top: 10px; 
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -517,4 +528,30 @@ label{
     color: red;
     text-align: center;
     font-size: 11px;
+}
+/* todos los productos */
+.ii{
+    display: block;
+    background-color: #00000037;
+    padding: 3px;
+    border-radius: 3px;
+    line-height: 1;
+    transition: .5s;
+}
+.ii:hover{
+    transform: scale(1.5);
+}
+.ii-borrar{
+    color: red;
+}
+.ii-borrar:hover{
+    color: white;
+    background-color: red;
+}
+.ii-editar{
+    color: rgb(54, 218, 36);
+}
+.ii-editar:hover{
+    color: white;
+    background-color: rgb(54, 218, 36);
 }

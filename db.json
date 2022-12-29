@@ -1,113 +1,144 @@
 {
-  "StarsWars":[
+  "categorias": [
     {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
+      "productos": [
+        {
+          "img": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
+          "nombre": "baby joda",
+          "precio": 123
+        },
+        {
+          "img": "https://images.unsplash.com/photo-1608346128025-1896b97a6fa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "nombre": "mandalorian",
+          "precio": 123
+        },
+        {
+          "img": "https://images.unsplash.com/photo-1547700055-b61cacebece9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "nombre": "scol trooper blanco",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A92131654C1E0B1A4C072A327E49FB30CA8BDED279852FB32CAD9B33B4AAAB1/scale?width=2880&aspectRatio=1.78&format=jpeg",
+          "nombre": "lamina nave",
+          "precio": "22"
+        }
+      ],
+      "id": "StarsWars"
     },
     {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
+      "id": "consolas",
+      "productos": [
+        {
+          "img": "https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "nombre": "consola 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        }
+      ]
     },
     {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
+      "id": "Diverso",
+      "productos": [
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "diverso 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        },
+        {
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
+          "nombre": "star war 1",
+          "precio": 123
+        }
+      ]
     },
     {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
+      "productos": [
+        {
+          "img": "https://www.manual.ar/gallery/22912657.jpg",
+          "nombre": "play station 4 slim",
+          "precio": "3"
+        },
+        {
+          "img": "https://playmania438.com.ar/wp-content/uploads/2019/06/consola-playstation-slim-ps2-D_NQ_NP_982438-MLA26481910757_122017-F.jpg",
+          "nombre": "play station 2",
+          "precio": "7"
+        },
+        {
+          "img": "https://http2.mlstatic.com/D_NQ_NP_837292-MLA52350716855_112022-O.jpg",
+          "nombre": "horizon",
+          "precio": "88"
+        }
+      ],
+      "id": "ps4"
     }
-  ],
-  "Consolas":[
-    {
-      "img":"https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "nombre":"consola 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    }
-  ],
-  "Diversos":[
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"diverso 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    },
-    {
-      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-      "nombre":"star war 1",
-      "precio":123
-    }
-  ],
-  "categoria":[
-    {"nombre": "StarsWars"},
-    {"nombre": "Consolas"},
-    {"nombre": "Diversos"}
   ]
 }

@@ -1,62 +1,13 @@
 import { productServices } from "../services/product-services.js";
 
-const html = `
-<section class="container section">
-            <div class="section-titulo">
-                <h2>Consolas</h2>
-                <a class="section-ver-todo" href="#">Ver todo<img src="./img/flecha.png" alt="flecha"></a>
-            </div>
-            <div>
-                <ul class="lista">
-                    <li>
-                        <img src="./img/consolas/unsplash_0POwK6iAiRQ.png" alt="">
-                        <p>Control XYZ</p>
-                        <p>$60,00</p>
-                        <a href="">Ver producto</a>
-                    </li>
-                    <li>
-                        <img src="./img/consolas/unsplash_caNzzoxls8Q.png" alt="">
-                        <p>Control y consola XYZ</p>
-                        <p>$60,00</p>
-                        <a href="">Ver producto</a>
-                    </li>
-                    <li>
-                        <img src="./img/consolas/unsplash_ZV7lnfyQLmA.png" alt="">
-                        <p>Consola XYZ</p>
-                        <p>$60,00</p>
-                        <a href="">Ver producto</a>
-                    </li>
-                    <li>
-                        <img src="./img/consolas/unsplash_wa5z9o9fgjw.png" alt="">
-                        <p>Control XYZ</p>
-                        <p>$60,00</p>
-                        <a href="">Ver producto</a>
-                    </li>
-                    <li>
-                        <img src="./img/consolas/unsplash_Zjn4dT993-g.png" alt="">
-                        <p>Consola XYZ</p>
-                        <p>$60,00</p>
-                        <a href="">Ver producto</a>
-                    </li>
-                    <li>
-                        <img src="./img/consolas/unsplash_k-xYhI3-gJM.png" alt="">
-                        <p>Game Boy Color</p>
-                        <p>$60,00</p>
-                        <a href="">Ver producto</a>
-                    </li>
-
-                </ul>
-            </div>
-        </section>
-`
-const crearSecciones = (nombre) =>{
+const crearSeccion = (nombre) =>{
     const main_categorias = document.querySelector('#main-categorias')
     const section = document.createElement('section')
     section.classList.add('section')
     const contenido = `
         <div class="section-titulo">
             <h2>${nombre}</h2>
-            <a class="section-ver-todo" href="#">Ver todo<img src="./img/flecha.png" alt="flecha"></a>   
+            <a class="section-ver-todo" href="./productos.html">Ver todo<img src="./img/flecha.png" alt="flecha"></a>   
         </div>
         <div>
             <ul class="lista ${nombre}">
@@ -67,40 +18,76 @@ const crearSecciones = (nombre) =>{
     main_categorias.appendChild(section)
 }
 
-const crearProductos = (productos,nombre)=>{
-    console.log(productos);
-    console.log(nombre);
-    const lista  =  document.querySelector(`.${nombre}`)
-    // console.log(section);
-    
-
-    productos.forEach(producto=>{
-        const li =  document.createElement('li')
-        const contenido = `
-            <img src="${producto.img}" alt="">
-            <p>${producto.nombre}</p>
-            <p>$${producto.precio}</p>
-            <a href="">Ver producto</a>
-        `
-        li.innerHTML = contenido
-        lista.appendChild(li)
+const crearSecciones = (categorias)=>{
+    categorias.forEach(categoria=>{
+        crearSeccion(categoria.id)
     })
+    return categorias
+}
 
+const crearProducto = (producto)=>{
+    const li =  document.createElement('li')
+    const contenido = `
+        <img src="${producto.img}" alt="">
+        <p>${producto.nombre}</p>
+        <p>$${producto.precio}</p>
+        <a href="">Ver producto</a>
+    `
+    li.innerHTML = contenido
+    return li
+}
+const crearProductos = (productos,nombre)=>{
+    const lista  =  document.querySelector(`.${nombre}`)
+    for (let i = 0; i < productos.length; i++) {
+        lista.appendChild(crearProducto(productos[i]))
+        if(i==5){
+            //Para solo mostrar los primeros 6 elementos
+            //en la pagina princila
+            break
+        }   
+    }
 }
 
 
-productServices.listaCategorias()
-    .then(categorias=>{
-        categorias.forEach(categoria=>{
-            crearSecciones(categoria.nombre)
-        })
-        return categorias
-    })
+productServices.listaCategoria()
+    .then(categorias=>{return crearSecciones(categorias)})
     .then(categorias=>{
         categorias.forEach(categoria => {
-            productServices.listaProductos(categoria.nombre)
-            .then(productos=>{
-                crearProductos(productos,categoria.nombre)
-            })
+            console.log(categoria);
+            crearProductos(categoria.productos,categoria.id)
         });
     })
+
+
+ const crearProductosBuscados = (productos,nombre,palabra)=>{
+     const lista  =  document.querySelector(`.${nombre}`)
+     // console.log(section);
+     let bandera = false;
+     productos.forEach(producto=>{
+         let nombre = producto.nombre.toLowerCase()
+         if(nombre.includes(palabra.toLowerCase())){
+             lista.appendChild(crearProducto(producto))
+             bandera=true
+         }         
+     })
+     if(!bandera){
+         lista.innerHTML = `<h2>No se encontrarion coincidencias en la categoria</h2>`
+     }    
+ }
+
+const buscador__button = document.querySelector('#buscador__button')
+const buscador = document.querySelector('#buscador')
+console.log(buscador);
+buscador__button.addEventListener('click',e=>{
+    e.preventDefault();
+    const main_categorias = document.querySelector('#main-categorias')
+    main_categorias.innerHTML =""
+    productServices.listaCategoria()
+    .then(categorias=>{return crearSecciones(categorias)})
+    .then(categorias=>{
+        categorias.forEach(categoria => {
+            crearProductosBuscados(categoria.productos,categoria.id,buscador.value)
+        });
+    })
+})
+
