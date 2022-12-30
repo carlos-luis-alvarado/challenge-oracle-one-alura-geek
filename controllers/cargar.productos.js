@@ -20,7 +20,10 @@ const crearSeccion = (nombre) =>{
 
 const crearSecciones = (categorias)=>{
     categorias.forEach(categoria=>{
-        crearSeccion(categoria.id)
+        if(categoria.productos.length!==0){
+            crearSeccion(categoria.id)
+        }
+       
     })
     return categorias
 }

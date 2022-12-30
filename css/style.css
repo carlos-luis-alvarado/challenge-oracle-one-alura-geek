@@ -534,12 +534,14 @@ label{
     display: block;
     background-color: #00000037;
     padding: 3px;
+    border: none;
     border-radius: 3px;
     line-height: 1;
     transition: .5s;
 }
 .ii:hover{
     transform: scale(1.5);
+    cursor: pointer;
 }
 .ii-borrar{
     color: red;

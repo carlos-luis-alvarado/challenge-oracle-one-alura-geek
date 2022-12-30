@@ -36,10 +36,18 @@ const agregarProducto =(categoria,productos)=>{
     });
 }
 
+const eliminarProducto = (id,categoria)=>{
+    console.log('eliminar a --> '+id);
+    return fetch(`http://localhost:3000/${categoria}/${id}`,{
+        method: 'DELETE'
+    })
+}
+
 export const productServices = {
     listaCategoria,
     listaProducto,
     agregarCategoria,
     agregarProducto,
-    obtenerCategoria
+    obtenerCategoria,
+    eliminarProducto
 }

@@ -3,9 +3,15 @@ const formulario__login = document.querySelector("#formulario__login")
 const email =  document.querySelector('#correo')
 const pass  =  document.querySelector('#password')
 console.log(formulario__login);
+const bandera = {
+    email:false,
+    password:false
+}
 formulario__login.addEventListener('submit',e=>{
     e.preventDefault();
-
+    if(bandera.email&&bandera.password){
+        window.location.href='../productos.html'
+    }
 })
 const mensajes = {
     correo : "El correo debe contener un @",
@@ -16,10 +22,7 @@ const mensajes = {
 }
 const error =document.querySelector('#mensaje-error')
 const mostrarMensajeInformativo = (campo,input)=>{
-
-    
     error.innerHTML = ""
-    console.log(campo);
     if (campo=='email'){
         console.log(mensajes.correo);
         error.innerHTML = mensajes.correo
@@ -40,15 +43,15 @@ const expresiones = {
 
 const validarCampo = (expresion, input,campo)=>{
     if(expresion.test(input.value)){
-        console.log('correcto');
         input.setCustomValidity(``)
         input.parentElement.classList.remove('no-valido')
         input.classList.remove('no-valido')
         input.parentElement.classList.add('valido')
         input.classList.add('valido')
-        error.innerHTML = ""
+        error.innerHTML = "";
+        bandera[campo] = true
+
     }else{
-        console.log('incorrecto');
         input.setCustomValidity(`El ${campo} ingresado no es valido`)
         input.parentElement.classList.remove('valido')
         input.classList.remove('valido')
