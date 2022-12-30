@@ -40,25 +40,28 @@
                     <h2>Agregar Producto</h2>
                     <label class="formulario__nombre" for="url-img">
                         URL de la imagen
-                        <input id="url-img" type="text" placeholder="www.imagen.com">
+                        <input id="url-img" data-form-add-url type="text" placeholder="www.imagen.com">
                     </label>
                     <label class="formulario__nombre" for="categoria">
                         Categoria
-                        <input id="categoria" type="text" placeholder="Ej : Consola">
+                        <input id="categoria" data-form-add-category type="text" placeholder="Ej : Consola">
                     </label>
                     <label class="formulario__nombre" for="nombre-producto">
                         Nombre del producto
-                        <input id="nombre-producto" type="text" placeholder="">
+                        <input id="nombre-producto" data-form-add-name type="text" placeholder="">
                     </label>
                     <label class="formulario__nombre" for="precio-producto">
                         Precio del producto
-                        <input id="precio-producto" type="number" placeholder="">
+                        <input id="precio-producto" data-form-add-price type="number" placeholder="">
                     </label>
-                    <textarea class="formulario__mensaje" name="" id="descripcion" cols="30" rows="10"></textarea>
+                    <div>
+                        <textarea class="formulario__mensaje" data-form-add-desc name="" id="descripcion" cols="30" rows="10"></textarea>
+                    </div>
                     
                     <button type="submit" class="button">
                         Agregar Producto
                     </button>
+                    <p id="mensaje-error"></p>
                 </form>
             </section>
         </div>
@@ -94,6 +97,8 @@
         <p>2022</p>
     </footer>
     <script type="module" src="./controllers/agregar.producto.js"></script>
+    <script type="module" src="./validations/product.validation.js"></script>
+    
 </body>
 
 </html>

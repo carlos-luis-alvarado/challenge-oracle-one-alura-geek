@@ -15,7 +15,7 @@ const agregarCategoria = (categoria) =>{
             headers:{
                 "Content-Type":"application/json"
             },
-            body:JSON.stringify({id:categoria,productos:[]})
+            body:JSON.stringify(categoria)
         }
     )    
 }
