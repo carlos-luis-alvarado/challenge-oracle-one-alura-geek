@@ -5,6 +5,7 @@
         {
           "img": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
           "nombre": "baby joda",
+          "descripcion": "laosdloas",
           "precio": 123,
           "id": 1
         },
@@ -12,116 +13,60 @@
           "img": "https://images.unsplash.com/photo-1608346128025-1896b97a6fa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           "nombre": "mandalorian",
           "precio": 123,
+          "descripcion": "laosdloas",
           "id": 2
         },
         {
           "img": "https://images.unsplash.com/photo-1547700055-b61cacebece9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           "nombre": "scol trooper blanco",
+          "descripcion": "laosdloas",
           "precio": 123,
           "id": 3
         },
         {
           "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
           "nombre": "star war 1",
+          "descripcion": "laosdloas",
           "precio": 123,
           "id": 4
         },
         {
           "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
           "nombre": "star war 1",
+          "descripcion": "laosdloas",
           "precio": 123,
           "id": 5
         },
         {
           "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
           "nombre": "star war 1",
+          "descripcion": "laosdloas",
           "precio": 123,
           "id": 6
         },
         {
           "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A92131654C1E0B1A4C072A327E49FB30CA8BDED279852FB32CAD9B33B4AAAB1/scale?width=2880&aspectRatio=1.78&format=jpeg",
           "nombre": "lamina nave",
+          "descripcion": "laosdloas",
           "precio": "22",
           "id": 7
         },
         {
           "img": "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-          "nombre": "star beatles",
+          "nombre": "star beatles1",
           "precio": "123",
-          "descripcion": "laosdloas",
-          "id": 3
+          "descripcion": "stars wars x bleatles lego",
+          "id": "8"
         }
       ],
       "id": "StarsWars"
     },
     {
-      "id": "consolas",
-      "productos": [
-        {
-          "img": "https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-          "nombre": "consola 1",
-          "precio": 123,
-          "id": 3
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 3
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 3
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 3
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 3
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 3
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 3
-        }
-      ]
+      "productos": [],
+      "id": "consolas"
     },
     {
-      "productos": [
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "diverso 1",
-          "precio": 123,
-          "id": 1
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 2
-        },
-        {
-          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKLJEQRvl7usD6NLDb5ctuSXS4OD6oaTSteDIoWA&s",
-          "nombre": "star war 1",
-          "precio": 123,
-          "id": 3
-        }
-      ],
+      "productos": [],
       "id": "Diverso"
     },
     {
