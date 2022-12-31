@@ -23,18 +23,17 @@ const crearSecciones = (categorias)=>{
         if(categoria.productos.length!==0){
             crearSeccion(categoria.id)
         }
-       
     })
     return categorias
 }
 
-const crearProducto = (producto)=>{
+const crearProducto = (producto,categ)=>{
     const li =  document.createElement('li')
     const contenido = `
         <img src="${producto.img}" alt="">
         <p>${producto.nombre}</p>
         <p>$${producto.precio}</p>
-        <a href="">Ver producto</a>
+        <a href="../descripcion.html?id=${producto.id}&categoria=${categ}">Ver producto</a>
     `
     li.innerHTML = contenido
     return li
@@ -42,7 +41,7 @@ const crearProducto = (producto)=>{
 const crearProductos = (productos,nombre)=>{
     const lista  =  document.querySelector(`.${nombre}`)
     for (let i = 0; i < productos.length; i++) {
-        lista.appendChild(crearProducto(productos[i]))
+        lista.appendChild(crearProducto(productos[i],nombre))
         if(i==5){
             //Para solo mostrar los primeros 6 elementos
             //en la pagina princila
@@ -56,7 +55,6 @@ productServices.listaCategoria()
     .then(categorias=>{return crearSecciones(categorias)})
     .then(categorias=>{
         categorias.forEach(categoria => {
-            console.log(categoria);
             crearProductos(categoria.productos,categoria.id)
         });
     })

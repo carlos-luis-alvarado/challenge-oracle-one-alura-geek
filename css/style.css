@@ -197,10 +197,13 @@ a {
 
 
 .banner__button {
-    margin-top: .5rem;
+    display: block;
+    width: 10rem;
+    margin-top: 1rem;
     padding: 1rem;
     background-color: var(--blue);
     color: #fff;
+    text-align: center;
 }
 
 /* secciones stars wars */
@@ -556,4 +559,28 @@ label{
 .ii-editar:hover{
     color: white;
     background-color: rgb(54, 218, 36);
+}
+
+/* descripcion */
+.informacio-producto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.informacio-producto img{
+    width: 100%;
+}
+@media (min-width: 360px) {
+    .informacio-producto{
+        flex-direction: row;
+    }
+    .informacio-producto img{
+        width: 30%;
+    }
+}
+@media (min-width: 768px) {
+    .informacio-producto img{
+        
+        width: 50%;
+    }
 }

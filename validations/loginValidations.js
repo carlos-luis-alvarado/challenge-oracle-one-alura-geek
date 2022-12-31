@@ -10,7 +10,7 @@ const bandera = {
 formulario__login.addEventListener('submit',e=>{
     e.preventDefault();
     if(bandera.email&&bandera.password){
-        window.location.href='../productos.html'
+        window.location.href='../productos-admin.html'
     }
 })
 const mensajes = {

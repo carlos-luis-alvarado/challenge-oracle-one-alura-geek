@@ -29,17 +29,17 @@ const obtenerCategoria = (categoria) => {
 }
 
 const agregarProducto = (categoria, producto, id_data) => {
-    const arr = categoria.productos.filter(p => p.id !== id_data)
+    const arr = categoria.productos.filter(p => p.id != id_data)
     arr.push(producto)
     productServices.agregarProducto(categoria.id, arr)
         .then(res => res)
 }
 const url_data = new URL(window.location)
 const categoria_data = url_data.searchParams.get("categoria")
-const id_data = url_data.searchParams.get("id")
+let id_data = url_data.searchParams.get("id")
 
 export const publicarProducto = (url, categoria, nombre, precio, descripcion) => {
-    
+    id_data = parseInt(id_data)
     if (id_data == null) {
         id_data = uuid.v4()
     }

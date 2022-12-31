@@ -13,19 +13,13 @@ const listarTodosProductos = (productos, categoria) => {
         <img src="${producto.img}" alt="">
         <p>${producto.nombre}</p>
         <p>$${producto.precio}</p>
-        <a href="">codigo</a>
+        <a href="#">codigo: ${producto.id}</a>
         `
         li.innerHTML = contenido
         lista.appendChild(li)
     })
 
 }
-
-
-
-
-
-
 
 productServices.listaCategoria()
     .then(categorias => {
@@ -47,9 +41,7 @@ productServices.listaCategoria()
                     confirmButtonText: 'Yes, delete it!'
                 }).then((result) => {
                     if (result.isConfirmed) {
-
                         let spl = boton.id.split('-');
-                        console.log(spl);
                         productServices.obtenerCategoria(spl[1])
                             .then(e => {
                                 let productosFiltrados = e.productos.filter(producto => producto.id != spl[0])
@@ -61,34 +53,6 @@ productServices.listaCategoria()
                 })
             })
         })
-    })
-    .then(e=>{
-        // let botonesBorrar = document.querySelectorAll('.ii-editar')
-        // botonesBorrar.forEach(boton => {
-        //     boton.addEventListener('click', e => {
-        //         e.preventDefault()
-        //         Swal.fire({
-        //             title: 'Esta seguro de borrar el producto?',
-        //             icon: 'warning',
-        //             showCancelButton: true,
-        //             confirmButtonColor: '#3085d6',
-        //             cancelButtonColor: '#d33',
-        //             confirmButtonText: 'Yes, delete it!'
-        //         }).then((result) => {
-        //             if (result.isConfirmed) {
-        //                 let spl = boton.id.split('-');
-        //                 console.log(spl);
-        //                 productServices.obtenerCategoria(spl[1])
-        //                     .then(e => {
-        //                         let productosFiltrados = e.productos.filter(producto => producto.id != spl[0])
-        //                         //productServices.eliminarProducto()
-        //                         return productosFiltrados
-        //                     })
-        //                     .then(e => productServices.agregarProducto(spl[1], e))
-        //             }
-        //         })
-        //     })
-        // })
     })
 
 
